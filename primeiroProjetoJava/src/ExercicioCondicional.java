@@ -14,10 +14,10 @@ public class ExercicioCondicional {
         
 
         System.out.printf("Seu salario BRUTO e: R$ " + salario + "\nSeu salario LIQUIDO e: R$ %.2f",salario - impostoRenda);
-
+        double salarioLiquido = (salario - impostoRenda);
         boolean salario2;
-        salario2 = (salario >= 20000) ? true : false;
-        System.out.println(salario2 ? "\nSalario de diretor" : "\nSalario de empregado");
+        salario2 = (salarioLiquido >= 20000) ? true : false;
+        System.out.println(salario2 ? "\nSalario de diretor" : "\nSalario de funcionario normal");
 
         
     }
